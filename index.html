@@ -369,17 +369,50 @@
         </div>
         <form class="footer-subscribe_form">
             <label class="footer-subscribe">Subscribe</label>
+            <div class="footer-subscribe_con">
                 <input class="footer-subscribe_search" type="email" placeholder="E-mail">
             <button class="footer-subscribe_button">Subscribe</button>
+        </div>
         </form>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-btn" data-modal-close>
-                <svg class="modal-icon" width="8px" height="8px">
+                <svg>
                     <use href="./icons.svg#icon-cross"></use>
                 </svg>
             </button>
+                <p class="modal-header">Leave your contacts and we will call you back</p> 
+                <div class="modal-input-box">
+                <label class="modal-input-text">
+                    <span class="modal-input-header">Name</span>
+                    <div class="modal-input-con">
+                        <input class="modal-input" type="name">
+                    </div>
+                </label>
+                <label class="modal-input-text">
+                    <span class="modal-input-header">Phone</span>
+                    <input class="modal-input-phone" type="phone">
+                </label>
+
+                <label class="modal-input-text">
+                    <span class="modal-input-header">Email</span>
+                    <input class="modal-input-mail" type="email">
+                </label>
+                <label class="modal-input-text">
+                    <span class="modal-input-header">Comment</span>
+                    <textarea class="modal-textarea" name="feedback" placeholder="Text input"></textarea>
+                </label>
+                </div>
+                <label class="check">
+                    <input class="modal-checkbox" type="checkbox">
+                        I accept the terms and conditions of the
+                        <a class="modal-checkbox-link" href="">Privacy Policy</a>
+                        <span class="check-box"></span>
+                </label>
+                <button class="modal-button-send">
+                    <span class="modal-button-send-text">Send</span>
+                </button>
         </div>
     </div>
     <script src="./js/modal.js"></script>
